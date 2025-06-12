@@ -1,0 +1,27 @@
+@media (max-width: 1000px) {
+    .textarea {
+        width: 50px;
+    }
+}
+
+.address {
+    visibility: hidden;
+}
+
+.custom-select {}
+
+.po {
+    background: rgb(240, 147, 147);
+}
+
+.card-header {
+    background: rgb(199, 195, 195);
+}
+
+.hidden-button {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 1px;
+    height: 1px;
+}

@@ -1,0 +1,187 @@
+        main {
+            margin-top: 152px;
+            background: #ddd;
+            padding-top: 70px;
+        }
+        
+        .admin_profile {
+            display: flex;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+        }
+        
+        .admin_profile ul {
+            list-style: none;
+        }
+        
+        .admin_profile .dropdown {
+            display: none;
+        }
+        
+        .admin-left {}
+        
+        .menu {
+            border-bottom: 1px solid #c12727;
+        }
+        
+        .menu-label {
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 14px 15px;
+            overflow: hidden;
+        }
+        
+        .menu-item {
+            display: none;
+            padding-left: 15px;
+        }
+        
+        .menu-item li {
+            left: 0;
+        }
+        
+        .menu-item li a {
+            display: block;
+            color: black;
+            font-weight: 400;
+            margin-bottom: 7px;
+            font-size: 16px;
+            padding-left: 4px;
+        }
+        
+        .menu-item li:last-child {
+            border-bottom: none;
+        }
+        
+        .menu-item li:hover {
+            border-left: 3px solid #c12727;
+        }
+        
+        .dropdown:checked+.menu-label+.menu-item {
+            display: block;
+        }
+        
+        .box-df {
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .admin-right {
+            margin-bottom: 50px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding-bottom: 50px;
+        }
+        
+        .admin-right table {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        .admin-right table tr th,
+        td {
+            border: 1px solid #dddddd;
+        }
+        
+        .admin-right table {
+            border-collapse: collapse;
+        }
+        
+        @media (min-width: 700px) {
+            /* .admin-right table {
+            font-size: 15px;
+        }
+        .admin-left {
+            font-size: 5px;
+        }
+        .admin-right .col-md-2 {
+            flex: 0 0 auto;
+            width: 100%;
+        }*/
+        }
+        
+        @media (max-width: 700px) {
+            /* main {
+            margin-top: 50px;
+        }
+        textarea {
+            width: 330px;
+        }
+        .admin-right table {
+            font-size: 10px;
+        }
+        .admin-left {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 10px;
+        }
+        .admin-right .col-md-2 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+        .col-1 {
+            flex: 0 0 auto;
+            width: 0;
+            padding: 0 0;
+        }
+        .col-8 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+        .col-9 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+        .container,
+        .container-sm {
+            max-width: 664px;
+        } */
+        }
+        
+        .admin-category-add input {
+            height: 30px;
+            width: 300px;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+        
+        .admin-category-add textarea {
+            padding-left: 10px;
+        }
+        
+        .admin-category-add select {
+            padding-left: 10px;
+        }
+        
+        .admin-left a {
+            text-decoration: none;
+        }
+        
+        .admin-category-add button {
+            display: block;
+            margin-top: 10px;
+            height: 30px;
+            width: 100px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border: none;
+            transition: 0.3s ease;
+        }
+        
+        .admin-category-add button:hover {
+            background-color: transparent;
+            border: 1px solid black;
+            color: black;
+        }
+        
+        .admin-category-add img {
+            width: 50px;
+            height: 50px;
+        }

@@ -1,0 +1,312 @@
+/* product-special start */
+
+.main .product {
+    padding: 100px;
+    /* display: flex; */
+    text-align: center;
+    justify-content: center
+}
+
+.main .product-special {
+    /* width: 100%; */
+    /* height: 804px;
+left: 110px;
+top: 1279px; */
+    /* padding: 100px 100px 10; */
+    background-color: none;
+}
+
+.product .product-special .container {
+    border: 10px solid #E2B184;
+    width: 1450px;
+    height: 650px;
+    left: 120px;
+    top: 1417px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('../img/banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.product .product-special .container .slide {
+    display: flex;
+}
+
+.product .product-special .container .slide {}
+
+.main .product-special .header-ps {
+    text-align: center;
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+}
+
+.main .product-special .container .content .favorite-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .096rem;
+    text-transform: uppercase;
+    color: #bf6161;
+    font-family: Reem Kufi, sans-serif;
+    margin-bottom: .8rem;
+}
+
+.main .product-special .container .content .favorite-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-left: 1px solid #FFFF;
+}
+
+.main .product-special .container .content .favorite-list ul {
+    width: calc(60% - 1rem);
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+.main .product-special .containể .content .favorite-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .product-special .container .content {
+    margin-top: 8rem;
+    text-align: left;
+    padding-left: 7rem;
+    max-width: 730px;
+}
+
+.main .product-special .container .content .btn-sp {
+    bottom: 0;
+}
+
+.product .product-special .container .prev-sp {
+    margin-left: 50rem;
+    margin-top: 100px;
+}
+
+.main .product-special .container img {
+    margin-left: 130px;
+    margin-top: 5rem;
+}
+
+.product .product-special .container .next-sp {
+    margin-top: 100px;
+}
+
+@media (max-width: 1000px) {
+    .main .product-special .container img {
+        margin-left: 0px;
+    }
+    .product .product-special .container .prev-sp {
+        margin: 0 0px 350px 0;
+    }
+    .product .product-special .container .next-sp {
+        margin: 0 0px 350px 0;
+    }
+    .product .product-special .container {
+        /* display: block; */
+        height: auto;
+        width: auto;
+        left: 0px;
+        margin-top: 1rem;
+    }
+    .product .product-special .container .slide {
+        flex-direction: column-reverse;
+    }
+    .main .product-special .container .content {
+        padding-left: 0px;
+        margin-bottom: 3.2rem;
+        margin-top: 1rem;
+    }
+    .main .product-special .container .content .btn-sp {
+        margin-top: 0;
+    }
+}
+
+
+/* product-special end */
+
+
+/* danh muc san pham */
+
+.main .list-product .product-item {
+    position: relative;
+    height: 500px;
+}
+
+.product-item:hover {
+    box-shadow: 3px 5px 10px 8px #888888;
+}
+
+.product-item .product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item .product-image a {
+    display: block;
+    /* background: #ffffff; */
+    transition: all.3s;
+}
+
+.product-item .product-image img {
+    width: 100%;
+    height: 350px;
+    transition: all .3s;
+}
+
+.product-item:hover .product-image img {
+    transform: scale(1.2);
+}
+
+.product-item .product-image .product-action {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(73, 73, 73, 0.5);
+    transition: all .3s;
+    font-size: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+/* Khi hover vào .bottom-product */
+
+.product-item:hover .bottom-product .price {
+    opacity: 1;
+}
+
+
+/* Ẩn phần giá mặc định */
+
+.price {
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.product-item:hover .product-image .product-action {
+    opacity: 1;
+}
+
+.product-item .product-image .product-action a {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 7px 0 10px 0;
+    font-size: 20px;
+    text-align: center;
+    /* color: #ffffff;
+    background: #FF6F61;
+    border: 1px solid #ffffff; */
+    border-radius: 4px;
+    transition: all .3s;
+    margin-top: 50px;
+}
+
+.product-item .product-image .product-action a i {
+    color: #ffffff;
+}
+
+.product-item:hover .product-image .product-action a {
+    margin-top: 0;
+}
+
+.bottom-product a {
+    color: #000000;
+    transition: all.3s;
+}
+
+.product-item:hover .bottom-product a {
+    font-size: 17px;
+    color: #FF6F61;
+}
+
+.product-item .product-image .product-action a:last-child {
+    margin-right: 0;
+}
+
+.product-item .product-image .product-action a i:hover {
+    color: #FF6F61;
+    /* background: #ffffff; */
+    /* border: 1px solid #FF6F61; */
+}
+
+.main .list-product .product-item .bottom-product {
+    background: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main .list-product .product-item .bottom-product h5,
+p {
+    padding-top: 0px;
+    color: #000000;
+}
+
+.main .list-product .product-item .bottom-product p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+
+/* service */
+
+.service {
+    padding: 1rem 0;
+}
+
+.service .wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.service .wrapper .service-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.1rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.service .wrapper .service-box .service-item {
+    /* padding: 5rem 0; */
+    /* max-width: 310px; */
+    max-width: calc(25% - 5rem);
+    width: 100%;
+    /* max-height: 280px; */
+    text-align: center;
+}
+
+.service .wrapper .service-box .service-item .service-title {
+    margin-top: 2.4rem;
+    color: #0a0603;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: .6rem;
+}
+
+.counter-item {
+    height: 272px;
+}
+
+.counter-item .title-counter {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.counter-item .content-counter {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #BDBCBC;
+}

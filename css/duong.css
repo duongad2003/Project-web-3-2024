@@ -1,0 +1,203 @@
+.mylogin * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mylogin {
+    display: flex;
+    height: 130vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/bg-login.png');
+    background-size: cover;
+}
+
+.mylogin .container {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.mylogin .login-form-title {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.mylogin .main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.mylogin .user-input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.mylogin .user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.mylogin .user-input-box label {
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.mylogin .user-input-box input {
+    height: 60px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding-left: 20px;
+}
+
+.mylogin .gender-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.mylogin .gender-category {
+    margin: 15px 0;
+    color: white;
+}
+
+.mylogin .gender-category label {
+    padding: 0 20px 0 5px;
+}
+
+.mylogin .gender-category label,
+.gender-category input,
+.form-submit-btn input {
+    cursor: pointer;
+}
+
+.form-submit-btn {
+    margin-top: 40px;
+}
+
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(63, 114, 76, 0.7);
+}
+
+.form-submit-btn input:hover {
+    background: rgba(65, 204, 93, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.mylogin .login-assist {
+    margin-top: 40px;
+    color: white;
+}
+
+.mylogin .main-user-info-log {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.mylogin .user-input-box-log {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    padding-bottom: 15px;
+}
+
+.mylogin .user-input-box-log label {
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.mylogin .user-input-box-log input {
+    height: 60px;
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding-left: 20px;
+}
+
+@media(max-width: 600px) {
+    .mylogin .container {
+        min-width: 280px;
+    }
+    .mylogin .user-input-box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .mylogin .user-input-box:nth-child(2n) {
+        justify-content: center;
+    }
+    .mylogin .gender-category {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+
+/*---------------------------------------ADMIN----------------------------------*/
+
+.user_profile * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.user_profile {
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 152px;
+    background-size: cover;
+}
+
+.user_profile p {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--p);
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.user_profile .tttk {
+    font-size: 25;
+    font-weight: 500;
+}
+
+.user_profile h2 {
+    font-size: 30px;
+}
